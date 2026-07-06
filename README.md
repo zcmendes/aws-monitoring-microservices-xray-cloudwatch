@@ -1,13 +1,8 @@
 ![AWS](https://img.shields.io/badge/AWS-X--Ray-orange)
-
 ![Amazon CloudWatch](https://img.shields.io/badge/Amazon-CloudWatch-red)
-
 ![Python](https://img.shields.io/badge/Python-Flask-blue)
-
 ![EC2](https://img.shields.io/badge/Amazon-EC2-orange)
-
 ![Monitoring](https://img.shields.io/badge/Monitoring-Observability-success)
-
 ![Microservices](https://img.shields.io/badge/Microservices-Distributed-blueviolet)
 
 
