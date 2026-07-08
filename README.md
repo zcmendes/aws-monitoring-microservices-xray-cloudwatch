@@ -79,6 +79,36 @@ Installing collected packages: wrapt, aws-xray-sdk
 Successfully installed aws-xray-sdk-2.15.0 wrapt-1.16.0
 ```
 
+## Starting the Application
+
+After installing and configuring the AWS X-Ray SDK, the application was started using:
+
+```bash
+python3 /home/ssm-user/ApplicationLayer/app.py
+```
+
+### Notes
+
+During the first execution, the following issues were observed:
+
+- A Python 3.7 deprecation warning from Boto3 (expected in the lab environment).
+- X-Ray initialization messages while the application started.
+- The application failed to start because TCP port **4000** was already in use by another process.
+
+To identify the process using the port:
+
+```bash
+lsof -i :4000
+```
+
+To terminate the process:
+
+```bash
+sudo kill <PID>
+```
+
+After releasing port **4000**, the application started successfully.
+
 ## Services Used
 ## Objectives
 ## Environment
