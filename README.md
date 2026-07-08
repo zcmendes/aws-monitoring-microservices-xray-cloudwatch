@@ -183,6 +183,26 @@ The X-Ray daemon successfully collected and transmitted trace segments to AWS X-
 
 
 
+## Installing the AWS X-Ray Daemon
+
+The AWS X-Ray daemon was installed on the EC2 instance to collect trace data from the instrumented application and forward it to AWS X-Ray.
+
+```bash
+sudo wget https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-3.x.rpm
+sudo yum install -y aws-xray-daemon-3.x.rpm
+```
+
+The installation completed successfully:
+
+```text
+Installed:
+  xray.x86_64 0:3.6.5-1
+
+Complete!
+```
+
+![AWS X-Ray Daemon Installation](images/xray-daemon-installation.png)
+
 ## Services Used
 ## Objectives
 ## Environment
