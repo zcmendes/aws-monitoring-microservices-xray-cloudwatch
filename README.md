@@ -203,6 +203,28 @@ Complete!
 
 ![AWS X-Ray Daemon Installation](images/xray-daemon-installation.png)
 
+
+## Configuring the Web Layer
+
+Activate the Python virtual environment, install the AWS X-Ray SDK, and restart the Web Layer service.
+
+```bash
+source /home/ssm-user/WebLayer/.venv/bin/activate
+pip3 install aws-xray-sdk
+
+sudo systemctl daemon-reload
+sudo systemctl enable WebLayer
+sudo systemctl restart WebLayer
+```
+
+The AWS X-Ray SDK was successfully installed in the virtual environment, and the Web Layer service was restarted to apply the instrumentation.
+
+```text
+Successfully installed aws-xray-sdk-2.15.0
+```
+
+![Web Layer Configuration](images/web-layer-configuration.png)
+
 ## Services Used
 ## Objectives
 ## Environment
