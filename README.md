@@ -179,7 +179,7 @@ ZZ Verifying X-Ray Trace Delivery
 
 The X-Ray daemon successfully collected and transmitted trace segments to AWS X-Ray.
 
-![X-Ray Daemon Log](images/xray-daemon-log.png)
+![X-Ray Daemon Log](images/xray-daemon-log_velha.png)
 
 
 
@@ -245,7 +245,7 @@ Example output:
 
 The successful **"Successfully sent batch of 1 segments"** message confirms that the X-Ray daemon is receiving trace data from the application and forwarding it to AWS X-Ray.
 
-![X-Ray Daemon Log](images/xray-daemon-log_Velha.png)
+![X-Ray Daemon Log](images/xray-daemon-log.png)
 
 
 
