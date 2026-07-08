@@ -64,6 +64,21 @@ Installed:
 
 Complete!
 ```
+
+## Installing the AWS X-Ray SDK
+
+The AWS X-Ray SDK was installed to enable distributed tracing within the Python Flask application.
+
+```bash
+export AWS_DEFAULT_REGION=$(curl -s 169.254.169.254/latest/dynamic/instance-identity/document | grep -i region | awk -F\" '{print $4}')
+pip3 install aws-xray-sdk
+```
+
+```bash
+Installing collected packages: wrapt, aws-xray-sdk
+Successfully installed aws-xray-sdk-2.15.0 wrapt-1.16.0
+```
+
 ## Services Used
 ## Objectives
 ## Environment
