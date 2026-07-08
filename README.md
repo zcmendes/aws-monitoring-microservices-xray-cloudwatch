@@ -122,6 +122,36 @@ python3 /home/ssm-user/ApplicationLayer/app.py
 
 Once the port was released, the application started successfully.
 
+## Running the Application
+
+Start the instrumented Flask application:
+
+```bash
+python3 /home/ssm-user/ApplicationLayer/app.py
+```
+
+Expected output:
+
+```text
+* Serving Flask app 'app'
+* Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment.
+* Running on all addresses (0.0.0.0)
+* Running on http://127.0.0.1:4000
+* Running on http://10.10.20.179:4000
+
+10.10.40.165 - - "GET /health HTTP/1.1" 200 -
+10.10.30.232 - - "GET /health HTTP/1.1" 200 -
+```
+
+The successful `/health` responses confirm that the application is running and responding to health check requests.
+
+
+### Running the Application
+
+![Application Running](images/application-running.png)
+
+
 ## Services Used
 ## Objectives
 ## Environment
