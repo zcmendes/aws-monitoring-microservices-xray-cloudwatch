@@ -245,7 +245,9 @@ Example output:
 
 The successful **"Successfully sent batch of 1 segments"** message confirms that the X-Ray daemon is receiving trace data from the application and forwarding it to AWS X-Ray.
 
-![X-Ray Daemon Log](images/xray-daemon-log.png)
+![X-Ray Daemon Log](images/xray-daemon-log_Velha.png)
+
+
 
 ## Services Used
 ## Objectives
