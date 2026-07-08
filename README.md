@@ -33,6 +33,22 @@ The application consists of a three-tier architecture deployed in Amazon EC2 ins
 The application is instrumented with the AWS X-Ray SDK. Trace data is collected by the X-Ray daemon running on each EC2 instance and sent to AWS X-Ray and Amazon CloudWatch for distributed tracing and application performance monitoring.
 
 ---
+
+
+
+## X-Ray Instrumentation
+
+The application was instrumented by:
+
+- Importing the AWS X-Ray SDK
+- Configuring the X-Ray recorder
+- Creating the Flask middleware
+- Patching SQLAlchemy to trace database calls
+- Wrapping the Flask application with the X-Ray middleware
+
+This instrumentation enables end-to-end distributed tracing across application components, allowing AWS X-Ray and Amazon CloudWatch to capture request flows, dependencies, and performance metrics.
+
+
 ## Services Used
 ## Objectives
 ## Environment
