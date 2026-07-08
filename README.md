@@ -152,6 +152,37 @@ The successful `/health` responses confirm that the application is running and r
 ![Application Running](images/application-running.png)
 
 
+
+## Verifying X-Ray Trace Delivery
+
+Verify that the X-Ray daemon is successfully sending trace segments to AWS X-Ray:
+
+```bash
+cat /var/log/xray/xray.log
+```
+
+Example output:
+
+```text
+2026-07-08T16:29:22Z [Info] Initializing AWS X-Ray daemon 3.6.5
+2026-07-08T16:29:22Z [Info] Using region: us-west-2
+2026-07-08T16:29:22Z [Info] Starting proxy http server on 127.0.0.1:2000
+
+2026-07-08T16:55:12Z [Info] Successfully sent batch of 1 segments (0.055 seconds)
+2026-07-08T16:55:21Z [Info] Successfully sent batch of 1 segments (0.035 seconds)
+2026-07-08T16:55:42Z [Info] Successfully sent batch of 1 segments (0.032 seconds)
+```
+
+The log confirms that the X-Ray daemon is collecting trace data from the application and successfully sending trace segments to AWS X-Ray for analysis in Amazon CloudWatch.
+
+ZZ Verifying X-Ray Trace Delivery
+
+The X-Ray daemon successfully collected and transmitted trace segments to AWS X-Ray.
+
+![X-Ray Daemon Log](images/xray-daemon-log.png)
+
+
+
 ## Services Used
 ## Objectives
 ## Environment
