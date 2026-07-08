@@ -225,6 +225,28 @@ Successfully installed aws-xray-sdk-2.15.0
 
 ![Web Layer Configuration](images/web-layer-configuration.png)
 
+
+## Verifying the X-Ray Daemon
+
+Verify that the AWS X-Ray daemon is running and successfully forwarding trace segments:
+
+```bash
+cat /var/log/xray/xray.log
+```
+
+Example output:
+
+```text
+2026-07-08T19:01:37Z [Info] Initializing AWS X-Ray daemon 3.6.5
+2026-07-08T19:01:37Z [Info] Using region: us-west-2
+2026-07-08T19:01:37Z [Info] Starting proxy http server on 127.0.0.1:2000
+2026-07-08T19:52:09Z [Info] Successfully sent batch of 1 segments (0.058 seconds)
+```
+
+The successful **"Successfully sent batch of 1 segments"** message confirms that the X-Ray daemon is receiving trace data from the application and forwarding it to AWS X-Ray.
+
+![X-Ray Daemon Log](images/xray-daemon-log.png)
+
 ## Services Used
 ## Objectives
 ## Environment
