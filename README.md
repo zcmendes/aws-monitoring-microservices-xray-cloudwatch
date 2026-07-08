@@ -58,8 +58,12 @@ sudo wget https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daem
 sudo yum install -y aws-xray-daemon-3.x.rpm
 ```
 
+```bash
+Installed:
+  xray.x86_64 0:3.6.5-1
 
-
+Complete!
+```
 ## Services Used
 ## Objectives
 ## Environment
