@@ -17,6 +17,22 @@ The lab demonstrates how to instrument Python Flask applications, collect trace 
 
 
 ## Architecture
+
+### Three-tier Application Architecture
+
+![Architecture](images/architecture.png)
+
+The application consists of a three-tier architecture deployed in Amazon EC2 instances behind Application Load Balancers, with Amazon Aurora as the backend database.
+
+---
+
+### AWS X-Ray Instrumentation
+
+![X-Ray Architecture](images/xray-architecture.png)
+
+The application is instrumented with the AWS X-Ray SDK. Trace data is collected by the X-Ray daemon running on each EC2 instance and sent to AWS X-Ray and Amazon CloudWatch for distributed tracing and application performance monitoring.
+
+---
 ## Services Used
 ## Objectives
 ## Environment
