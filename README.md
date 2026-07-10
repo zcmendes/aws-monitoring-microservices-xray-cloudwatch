@@ -15,6 +15,14 @@ This repository documents the implementation of distributed tracing and monitori
 The lab demonstrates how to instrument Python Flask applications, collect trace data, visualize service dependencies, and analyze end-to-end request performance.
 
 
+## Objectives
+
+- Instrument a Python Flask application with the AWS X-Ray SDK.
+- Install and configure the AWS X-Ray daemon on Amazon EC2.
+- Collect and visualize distributed traces.
+- Analyze service dependencies and request latency.
+- Monitor application performance using Amazon CloudWatch.
+
 
 ## Architecture
 
