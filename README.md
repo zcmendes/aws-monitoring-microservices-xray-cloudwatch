@@ -39,19 +39,9 @@ The application consists of a three-tier architecture deployed in Amazon EC2 ins
 
 ```text
 .
-├── images/
-│   ├── application-running.png
-│   ├── architecture.png
-│   ├── raw-trace-data.png
-│   ├── segments-timeline.png
-│   ├── trace-details.png
-│   ├── trace-map.png
-│   ├── web-layer-configuration.png
-│   ├── xray-architecture.png
-│   ├── xray-daemon-installation.png
-│   └── xray-daemon-log.png
-├── LICENSE
-└── README.md
+├── images/                 # Architecture diagrams and screenshots
+├── LICENSE                 # MIT License
+└── README.md               # Project documentation
 ```
 
 
