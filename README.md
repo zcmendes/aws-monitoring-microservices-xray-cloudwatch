@@ -110,9 +110,7 @@ Successfully installed aws-xray-sdk-2.15.0
 
 ## Running the Application
 
-
-
-After installing and configuring the AWS X-Ray SDK, start the application:
+Start the instrumented Flask application:
 
 ```bash
 python3 /home/ssm-user/ApplicationLayer/app.py
@@ -120,7 +118,7 @@ python3 /home/ssm-user/ApplicationLayer/app.py
 
 ### Common Issues
 
-During the first execution, the following behavior was observed:
+During the first execution, a few issues were encountered and resolved as described below:
 
 - A Python 3.7 deprecation warning from Boto3 (expected in the lab environment).
 - X-Ray initialization messages before the first trace is created.
@@ -145,22 +143,9 @@ Terminate the process:
 sudo kill 3623
 ```
 
-Restart the application:
+After releasing the port, restart the application using the same command shown above.
 
-```bash
-python3 /home/ssm-user/ApplicationLayer/app.py
-```
-
-Once the port was released, the application started successfully.
-
-
-Start the instrumented Flask application:
-
-```bash
-python3 /home/ssm-user/ApplicationLayer/app.py
-```
-
-Expected output:
+### Expected Output
 
 ```text
 * Serving Flask app 'app'
@@ -176,17 +161,7 @@ WARNING: This is a development server. Do not use it in a production deployment.
 
 The successful `/health` responses confirm that the application is running and responding to health check requests.
 
-
-### Running the Application
-
 ![Application Running](images/application-running.png)
-
-
-
-
-
-
-
 
 
 ## Verifying the X-Ray Daemon
