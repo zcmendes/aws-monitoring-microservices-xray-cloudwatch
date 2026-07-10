@@ -228,6 +228,20 @@ It enables developers to:
 ![Trace Map](images/trace-map.png)
 
 
+### Trace Details
+
+The **Trace Details** view provides detailed information about an individual request captured by AWS X-Ray.
+
+It allows you to:
+
+- Inspect the complete execution path of a single request.
+- View request metadata, including HTTP method, response code, and execution time.
+- Analyze interactions between application components and downstream services.
+- Identify latency and performance issues within a specific trace.
+
+![Trace Details](images/trace-details.png)
+
+
 ## Services Used
 
 ## Lessons Learned
