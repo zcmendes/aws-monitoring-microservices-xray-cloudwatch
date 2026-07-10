@@ -49,6 +49,25 @@ The application was instrumented by:
 This instrumentation enables end-to-end distributed tracing across application components, allowing AWS X-Ray and Amazon CloudWatch to capture request flows, dependencies, and performance metrics.
 
 
+## Installing the AWS X-Ray Daemon
+
+The AWS X-Ray daemon was installed on the EC2 instance to collect trace data from the instrumented application and forward it to AWS X-Ray.
+
+```bash
+sudo wget https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-3.x.rpm
+sudo yum install -y aws-xray-daemon-3.x.rpm
+```
+
+The installation completed successfully:
+
+```text
+Installed:
+  xray.x86_64 0:3.6.5-1
+
+Complete!
+```
+
+![AWS X-Ray Daemon Installation](images/xray-daemon-installation.png)
 
 
 ## Installing the AWS X-Ray SDK
@@ -142,25 +161,7 @@ The successful `/health` responses confirm that the application is running and r
 
 
 
-## Installing the AWS X-Ray Daemon
 
-The AWS X-Ray daemon was installed on the EC2 instance to collect trace data from the instrumented application and forward it to AWS X-Ray.
-
-```bash
-sudo wget https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-3.x.rpm
-sudo yum install -y aws-xray-daemon-3.x.rpm
-```
-
-The installation completed successfully:
-
-```text
-Installed:
-  xray.x86_64 0:3.6.5-1
-
-Complete!
-```
-
-![AWS X-Ray Daemon Installation](images/xray-daemon-installation.png)
 
 
 ## Configuring the Web Layer
