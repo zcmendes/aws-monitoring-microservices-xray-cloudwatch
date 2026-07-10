@@ -288,3 +288,25 @@ This raw data is useful for troubleshooting, validating instrumentation, and per
 
 
 ## Lessons Learned
+
+
+## Lessons Learned
+
+During this lab, the following concepts were explored:
+
+- Instrumenting Python Flask applications with the AWS X-Ray SDK.
+- Installing and configuring the AWS X-Ray daemon.
+- Monitoring distributed applications with Amazon CloudWatch.
+- Visualizing service dependencies using the X-Ray Trace Map.
+- Analyzing request latency through Segments Timeline.
+- Inspecting raw trace data for troubleshooting and performance analysis.
+
+
+## Author
+
+**Ze Mendes**
+
+Information Security Analyst with experience in Cloud Computing, Cybersecurity, Infrastructure, and IT Governance.
+
+- GitHub: https://github.com/zcmendes
+- LinkedIn: https://www.linkedin.com/in/zcmendes
