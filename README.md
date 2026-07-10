@@ -242,6 +242,20 @@ It allows you to:
 ![Trace Details](images/trace-details.png)
 
 
+### Segments Timeline
+
+The **Segments Timeline** provides a detailed breakdown of the execution time for each segment and subsegment within a single request.
+
+It enables you to:
+
+- Analyze the execution order of application components.
+- Measure the latency of individual services and database calls.
+- Identify performance bottlenecks in distributed requests.
+- Understand how the total request duration is distributed across the application.
+
+![Segments Timeline](images/segments-timeline.png)
+
+
 ## Services Used
 
 ## Lessons Learned
