@@ -251,8 +251,6 @@ This raw data is useful for troubleshooting, validating instrumentation, and per
 
 ## Services Used
 
-## Services Used
-
 - Amazon EC2
 - AWS X-Ray
 - Amazon CloudWatch
