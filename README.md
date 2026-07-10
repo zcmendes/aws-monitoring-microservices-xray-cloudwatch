@@ -34,6 +34,24 @@ The application consists of a three-tier architecture deployed in Amazon EC2 ins
 
 ---
 
+
+## Repository Structure
+
+```text
+.
+├── images/
+│   ├── architecture.png
+│   ├── xray-architecture.png
+│   ├── application-running.png
+│   ├── trace-map.png
+│   ├── trace-details.png
+│   ├── segments-timeline.png
+│   └── raw-trace-data.png
+├── LICENSE
+└── README.md
+```
+
+
 ### AWS X-Ray Instrumentation
 
 ![X-Ray Architecture](images/xray-architecture.png)
