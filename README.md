@@ -211,10 +211,23 @@ The successful **"Successfully sent batch of 1 segments"** message confirms that
 ![X-Ray Daemon Log](images/xray-daemon-log.png)
 
 
+## Trace Analysis
+
+
+### Trace Map
+
+The AWS X-Ray Trace Map provides an end-to-end visualization of the application's request flow and service dependencies.
+
+It enables developers to:
+
+- Visualize communication between application components.
+- Identify service dependencies and request paths.
+- Detect latency bottlenecks and performance issues.
+- Monitor distributed requests across the application stack.
+
+![Trace Map](images/trace-map.png)
+
 
 ## Services Used
-## Objectives
-## Environment
-## Configuration
-## Results
+
 ## Lessons Learned
