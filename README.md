@@ -46,7 +46,7 @@ The application was instrumented by:
 - Patching SQLAlchemy to trace database calls
 - Wrapping the Flask application with the X-Ray middleware
 
-This instrumentation enables end-to-end distributed tracing across application components, allowing AWS X-Ray and Amazon CloudWatch to capture request flows, dependencies, and performance metrics.
+This instrumentation enables end-to-end distributed tracing, allowing AWS X-Ray and Amazon CloudWatch to capture request flows, service dependencies, and performance metrics across the application.
 
 
 ## Installing the AWS X-Ray Daemon
