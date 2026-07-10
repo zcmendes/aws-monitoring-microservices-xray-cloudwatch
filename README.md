@@ -18,7 +18,7 @@ The lab demonstrates how to instrument Python Flask applications, collect trace 
 
 ## Architecture
 
-### Three-tier Application Architecture
+### Distributed Tracing Architecture
 
 ![Architecture](images/architecture.png)
 
