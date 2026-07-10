@@ -40,13 +40,16 @@ The application consists of a three-tier architecture deployed in Amazon EC2 ins
 ```text
 .
 ├── images/
-│   ├── architecture.png
-│   ├── xray-architecture.png
 │   ├── application-running.png
-│   ├── trace-map.png
-│   ├── trace-details.png
+│   ├── architecture.png
+│   ├── raw-trace-data.png
 │   ├── segments-timeline.png
-│   └── raw-trace-data.png
+│   ├── trace-details.png
+│   ├── trace-map.png
+│   ├── web-layer-configuration.png
+│   ├── xray-architecture.png
+│   ├── xray-daemon-installation.png
+│   └── xray-daemon-log.png
 ├── LICENSE
 └── README.md
 ```
