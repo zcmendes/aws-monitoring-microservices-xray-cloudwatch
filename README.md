@@ -279,6 +279,11 @@ During this lab, the following concepts were explored:
 - Inspecting raw trace data for troubleshooting and performance analysis.
 
 
+## Conclusion
+
+This lab demonstrates how AWS X-Ray and Amazon CloudWatch can be combined to provide end-to-end observability for distributed applications. By instrumenting the application and analyzing trace data, it becomes easier to identify latency, understand service dependencies, and troubleshoot performance issues across a microservices architecture.
+
+
 ## Author
 
 **Ze Mendes**
