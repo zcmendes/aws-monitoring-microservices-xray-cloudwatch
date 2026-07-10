@@ -261,10 +261,6 @@ This raw data is useful for troubleshooting, validating instrumentation, and per
 - Python Flask
 - AWS X-Ray SDK
 
-
-## Lessons Learned
-
-
 ## Lessons Learned
 
 During this lab, the following concepts were explored:
