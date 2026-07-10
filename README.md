@@ -65,7 +65,11 @@ Installing collected packages: wrapt, aws-xray-sdk
 Successfully installed aws-xray-sdk-2.15.0 wrapt-1.16.0
 ```
 
-## Starting the Application
+
+
+## Running the Application
+
+
 
 After installing and configuring the AWS X-Ray SDK, start the application:
 
@@ -108,7 +112,6 @@ python3 /home/ssm-user/ApplicationLayer/app.py
 
 Once the port was released, the application started successfully.
 
-## Running the Application
 
 Start the instrumented Flask application:
 
