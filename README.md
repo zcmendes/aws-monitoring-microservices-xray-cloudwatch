@@ -256,6 +256,24 @@ It enables you to:
 ![Segments Timeline](images/segments-timeline.png)
 
 
+
+### Raw Trace Data
+
+The **Raw Trace Data** view displays the complete JSON representation of a captured trace.
+
+It provides detailed information about the request, including:
+
+- Trace and segment identifiers.
+- Request metadata and response status.
+- Service and database interactions.
+- Segment and subsegment details.
+- Timing information for distributed requests.
+
+This raw data is useful for troubleshooting, validating instrumentation, and performing advanced trace analysis.
+
+![Raw Trace Data](images/raw-trace-data.png)
+
+
 ## Services Used
 
 ## Lessons Learned
